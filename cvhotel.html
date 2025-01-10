@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<title>Accomodations</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="images/DSN_logo.png" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+  integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+
+
+
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Raleway", sans-serif
+  }
+</style>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-collapse w3-white" style="z-index:3;width:300px;" id="mySidebar"><br>
+    <div w3-include-html="sidebar.html"></div>
+  </nav>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+    title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:300px">
+
+    <!-- Header -->
+    <header id="dsnHeader">
+      <div w3-include-html="header.html"></div>
+    </header>
+
+    <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+      <h1><b>Accommodation</b></h1>
+      TBD
+      <!--
+      <p>If you want to have a hotel discount code, please email us at: <strong>dsn2025brisbane@gmail.com</strong> with
+        the subject <strong>"DSN2025 hotel discount"</strong>, and your <strong>conference registration number</strong>, we may reply back
+        to this request with the hotel booking link and the discount code.</p>
+        -->
+
+      <div class="row">
+
+        <!-- Pullman Hotel -->
+        <div class="col-md-3" style="margin-top: 15px;">
+          <div class="card mb-4 shadow-sm">
+            <img class="card-img-top" width="100%" height="225"
+              src="">
+            </img>
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h6 class="card-text">HOTEL EXAMPLE</h6>
+                  </div>
+                  <div class="col-md-12">
+                    <i class="bi bi-star-fill star-checked">&nbsp;</i>
+                    <i class="bi bi-star-fill star-checked">&nbsp;</i>
+                    <i class="bi bi-star-fill star-checked">&nbsp;</i>
+                    <i class="bi bi-star-fill star-checked">&nbsp;</i>
+                    <i class="bi bi-star-fill star-checked">&nbsp;</i>                    
+                  </div>
+                </div>
+              </div>
+              <!-- <p class="card-text">
+                    <p>10% Discount available!<br>See details to book.</p>
+                </p> -->
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-primary">
+                    <a href="" style="color: inherit; text-decoration: none;">Website</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      <!-- Footer -->
+      <footer class="w3-container w3-padding-32 w3-grey">
+        <div class="w3-row-padding">
+          <h3>Sponsors</h3>
+          <div class="w3-half">
+            <img src="images/logoIEEE2.png" alt="IEEE Logo" style="width:50%">
+          </div>
+          <div class="w3-half">
+            <img src="images/logoIFIP.png" alt="IFIP Logo" style="width:35%">
+          </div>
+        </div>
+      </footer>
+
+      <div class="w3-black w3-center w3-padding-24" id="acknowledgments">
+        Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+          class="w3-hover-opacity">w3.css</a>
+      </div>
+
+      <!-- End page content -->
+    </div>
+
+    <script>
+      // Script to open and close sidebar
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
+
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+      }
+
+      function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /* Loop through a collection of all HTML elements: */
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+          elmnt = z[i];
+          /*search for elements with a certain atrribute:*/
+          file = elmnt.getAttribute("w3-include-html");
+          if (file) {
+            /* Make an HTTP request using the attribute value as the file name: */
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+              if (this.readyState == 4) {
+                if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+                if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+                /* Remove the attribute, and call this function once more: */
+                elmnt.removeAttribute("w3-include-html");
+                includeHTML();
+              }
+            }
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            /* Exit the function: */
+            return;
+          }
+        }
+      }
+      includeHTML();
+
+      function accordianFunc(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<title>Travel Info</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="images/DSN_logo.png"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div w3-include-html="sidebar.html"></div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="dsnHeader">
+    <div w3-include-html="header.html"></div>
+  </header>
+<div class="w3-container w3-padding-large" style="margin-bottom:32px; text-align:justify">
+    <h1><b>Local Attractions</b></h1>
+    <p>COMING SOON!</p>
+  <!--
+    <h5>National Aquarium</h5>
+	<div class="w3-card-1">
+			<div class="w3-container w3-padding">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/BaltimoreNationalAquarium.JPG/1920px-BaltimoreNationalAquarium.JPG" alt="Waterfall" class="w3-left w3-normal w3-margin" style="width:40%">
+				<br>
+				<p>[Copied from Wikipedia] The National Aquarium – also known as National Aquarium in Baltimore and formerly known as Baltimore Aquarium – is a non-profit public aquarium located at 501 East Pratt Street on Pier 3 in the Inner Harbor area of downtown Baltimore, Maryland, in the United States. Constructed during a period of urban renewal in Baltimore, the aquarium opened on August 8, 1981. The aquarium has an annual attendance of 1.5 million visitors and is the largest tourism attraction in the State of Maryland. The aquarium holds more than 2,200,000 US gallons (8,300,000 l) of water, and has more than 17,000 specimens representing over 750 species. The National Aquarium's mission is to inspire conservation of the world's aquatic treasures. The aquarium's stated vision is to confront pressing issues facing global aquatic habitats through pioneering science, conservation, and educational programming. </p>
+				<p>The links below provide guidance and more travel options. </p>
+				<p><a href="https://aqua.org/" target="_blank">https://aqua.org/</a></p>
+				</div>
+	</div>	
+	
+
+    <h5> American Visionary Art Museum</h5>
+	<div class="w3-card-1">
+			<div class="w3-container w3-padding">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/American_Visionary_Arts_Museum%2C_Baltimore_%28ca._2005%29.jpg/440px-American_Visionary_Arts_Museum%2C_Baltimore_%28ca._2005%29.jpg" alt="Waterfall" class="w3-left w3-normal w3-margin" style="width:40%">
+				<br>
+				<p>[Copied from Wikipedia] The American Visionary Art Museum (AVAM) is an art museum located in Baltimore, Maryland's Federal Hill neighborhood at 800 Key Highway. The museum specializes in the preservation and display of outsider art (also known as "intuitive art," "raw art," or "art brut"). The city agreed to give the museum a piece of land on the south shore of the Inner Harbor under the condition that its organizers would clean up residual pollution from a copper paint factory and a whiskey warehouse that formerly occupied the site. It has been designated by Congress as America's national museum for visionary art. </p>
+				<p>The links below provide guidance and more travel options.</p>
+				<p><a href="https://avam.org/" target="_blank">https://avam.org/</a></p>
+				</div>
+	</div>
+
+
+    <h5> Inner Harbor and Historic Ships</h5>
+	<div class="w3-card-1">
+			<div class="w3-container w3-padding">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/USS_Constellation_Inner_Harbor.JPG/600px-USS_Constellation_Inner_Harbor.JPG" alt="Waterfall" class="w3-left w3-normal w3-margin" style="width:40%">
+				<br>
+				<p>[Copied from Wikipedia] USS Constellation is a sloop-of-war, the last sail-only warship designed and built by the United States Navy. She was built at the Gosport Shipyard between 1853 and 1855 and was named for the earlier frigate of the same name that had been broken up in 1853. The sloop's primary armament was 8-inch (203 mm) shell-firing guns and four 32-pounder long guns, though she carried other guns as well, including two Parrott rifle chase guns. Constellation's career as a front-line unit was relatively short; after entering service in 1855, she served with the Mediterranean Squadron until 1858, and in 1859, she was assigned as the flagship of the Africa Squadron, where she served with the African Slave Trade Patrol. During the American Civil War (1861–1865), the ship returned to the Mediterranean to patrol for Confederate vessels. In late 1864, she returned to the United States to be decommissioned, as most of her crews' enlistments had expired. She spent the rest of the war out of service. </p>
+				<p>The links below provide guidance and more travel options.</p>
+				<p><a href="https://historicships.org/" target="_blank">https://historicships.org/</a></p>
+				</div>
+	</div>
+
+
+    <h5>  Maryland Zoo in Baltimore</h5>
+	<div class="w3-card-1">
+			<div class="w3-container w3-padding">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Zebra_maryland_balt.jpg/520px-Zebra_maryland_balt.jpg" alt="Waterfall" class="w3-left w3-normal w3-margin" style="width:40%">
+				<br>
+				<p>[Copied from Wikipedia] The Maryland Zoo — also known as The Maryland Zoo in Baltimore and formerly known as The Baltimore City Zoo or the Baltimore Zoo — is a 135-acre park located in historic Druid Hill Park in the northwestern area of the City of Baltimore, Maryland, (U.S.A.), with the postal address of 1876 Mansion House Drive. Druid Hill was opened in 1876 as the first major park purchase by the City under foreseeing Mayor Thomas Swann (1809-1883), (and later as 33rd Governor of Maryland, 1866-1869) and was later designed by famed nationally-known landscaper Frederick Law Olmsted (1822-1903)[citation needed], with additional work on various park buildings contributed by future Baltimore City Hall architect George A. Frederick (1842-1924), and Park Commissioner John H.B. Latrobe (son of earlier famed British-American architect Benjamin Henry Latrobe [1764-1820]), who also was an accomplished lawyer, author, artist, amateur architect and civic leader. Olmsted had earlier won a contest for the design of plans for New York City's famed Central Park in mid-town Manhattan in 1858, a year after it opened, and worked on the massive public works project during its construction from 1858 to 1873. The Maryland Zoo is now currently home to over 2,000 animals, and is accredited by the Association of Zoos and Aquariums (AZA).</p>
+				<p>The links below provide guidance and more travel options.</p>
+				<p><a href="http://www.marylandzoo.org/" target="_blank">http://www.marylandzoo.org/</a></p>
+				</div>
+	</div>
+-->
+
+</div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-grey">
+  <div class="w3-row-padding">
+    <h3>Sponsors</h3>
+    <div class="w3-half">
+      <img src="images/logoIEEE2.png" alt="IEEE Logo" style="width:50%">
+    </div>
+    <div class="w3-half">
+      <img src="images/logoIFIP.png" alt="IFIP Logo" style="width:35%">
+    </div>
+  </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24" id="acknowledgments">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+includeHTML();
+
+function accordianFunc(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

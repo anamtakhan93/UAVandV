@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<title>Artifacts</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="images/DSN_logo.png"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div w3-include-html="sidebar.html"></div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="dsnHeader">
+    <div w3-include-html="header.html"></div>
+  </header>
+  
+  <!-- Call for papers -->
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h1><b>DSN-2025: Artifacts Call For Contributions</b></h1>
+
+    <p>DSN supports open science, where authors of accepted papers are encouraged to make their tools and datasets publicly available to ensure reproducibility and replicability by other researchers. New this year, DSN 2025 will offer a separate artifact evaluation track to all accepted papers from all three categories of the research track. The goals of the artifact track are to (1) increase confidence in a paper’s claims and results, and (2) facilitate future research via publicly available datasets and tools.</p>
+
+    <h2>Badges</h2>
+    <p>The availability of artifacts accompanying the papers will be denoted by badges. Badges will appear on the page of the paper on the digital library. Since DSN is an IEEE-sponsored conference, it follows the scheme of the IEEE Xplore digital library (see <a href="https://ieeexplore.ieee.org/Xplorehelp/overview-of-ieee-xplore/about-content#reproducibility-badges">https://ieeexplore.ieee.org/Xplorehelp/overview-of-ieee-xplore/about-content#reproducibility-badges</a>). Accordingly, DSN will award the following three types of badges:<p>
+    <ul>
+      <li><u><b>Available</b></u>: The code and/or datasets, including any associated data and documentation, provided by the authors is reasonable and complete and can potentially be used to support reproducibility of the published results.
+      <li><u><b>Reviewed</b></u>: The code and/or datasets, including any associated data and documentation, provided by the authors is reasonable and complete, runs to produce the outputs described, and can support reproducibility of the published results.
+      <li><u><b>Reproducible</b></u>: This badge signals that an additional step was taken or facilitated to certify that an independent party has regenerated computational results using the author-created research objects, methods, code, and conditions of analysis. Reproducible assumes that the research objects were also reviewed.
+
+    </ul>
+
+    <p>The “Reviewed” badge implies that the artifact also qualifies for the “Available” badge. The “Reproducible” badge subsumes both the “Reviewed” and “Available” badges. Authors can apply for all of the three types (i.e., the artifact is Available, Reviewed, and Reproducible).
+      </p>
+
+    <p>Artifacts can be <b>Code</b> or <b>Datasets</b>. The same research paper can be accompanied by both Code and Datasets.</p>
+
+    <p>IEEE Xplore also allows a fourth type of badge (“Replicated”). This fourth badge is only for replication studies performed by other authors, and will not be awarded as part of this artifact evaluation process.</p>
+
+    <img src="images/dsn2025_artifact.png" alt="DSN 2025 Artifacts list" style="width:70%">
+
+    <h2>Artifact Submissions</h2>
+    <p>At the time of the submission, authors must indicate (1) whether they intend to submit an artifact for their submission, (2) the type of artifact (code, dataset, or both), (3) a DOI reserved for the artifact on an open-access repository (Zenodo or Figshare), and (4) the badge(s) they are applying for.</p>
+
+    <p>Please note that we require that the artifact should be submitted either through Zenodo (<a href="https://zenodo.org/">https://zenodo.org/</a>) or Figshare (<a href="https://figshare.com/">https://figshare.com/</a>). They are two very popular open-access repositories adopted by computer science conferences, which assure long-term archival storage. 
+    </p>
+
+    <p>These repositories can provide a DOI, i.e., a fixed, persistent identifier for the artifact, that provides a more stable link than directly using an URL. Please note that <b>the DOI of the artifact should be indicated at the time of paper submission for the research track</b>, even if the artifact is not yet ready. Both Zenodo and Figshare allow users to reserve a DOI, and to upload the actual artifact at a later moment. The DOI will become reachable when the artifact is published. For more information about how to reserve a DOI, please see the following tutorials:</p>
+
+    <ul>
+      <li>Zenodo tutorial - How to use and upload your research - YouTube (<a href="https://www.youtube.com/watch?v=BPVSErzNtME">https://www.youtube.com/watch?v=BPVSErzNtME</a>)
+      <li>Figshare support - How to reserve a DOI - YouTube (<a href="https://www.youtube.com/watch?v=3J6AuHT3ds8">https://www.youtube.com/watch?v=3J6AuHT3ds8</a>)
+    </ul>
+
+    <p>Please note that artifacts <b>should not be submitted through GitHub or other software development platforms</b>. Of course, you are free to also share a copy of your artifact through these platforms, but we require that the artifact is submitted and shared through Zenodo or Figshare for long-term archival storage and better interoperability.</p>
+
+    <p>We reiterate that the artifact does not need to be submitted at the same time as the paper. The artifact can be uploaded at the reserved DOI after the paper submission deadline, and can be updated until the artifact submission deadline. Information about the artifact submission and its review will not be shared with the PC of the research track.</p>
+
+    <p>Artifacts should be submitted with a license that allows researchers to reuse and to extend the artifact (e.g., for comparison purposes in a future paper). The license can be indicated through metadata on the open-data repository, and through a file included in the artifact (e.g., LICENSE.txt). <b>Creative Commons</b> licenses are a typical choice for open data.</p>
+    
+    <p>Please find below the deadline for finalizing artifacts among the important dates. By that date, the authors should submit a dedicated form to inform us that the artifact has been actually submitted. See below for more information about artifact submission.
+      </p>
+
+    <h2>Artifact Evaluation Process</h2>
+    <p>The artifacts will be evaluated by a dedicated Artifacts Evaluation (AE) committee through a single-blind review process, where authors should be available to respond quickly during the artifact evaluation.
+      </p>
+
+    <p>The artifact evaluation process is restricted to <b>accepted papers</b> in the research track of DSN (including PER and Tool papers). The evaluation will begin after the review process is complete and acceptance decisions have been made by the research track PC. The research PC chairs will make the submitted paper available to the Artifact Evaluation committee. The information about the artifact evaluation is NOT shared with the research PC in any form.
+      </p>
+
+    <p>Evaluation starts with a “kick-the-tires” period, during which evaluators ensure they can access their assigned artifacts and perform basic operations such as building and running a minimal working example. During the kick-the-tires period, the committee can communicate with the authors (anonymously through the submission platform) to give early feedback about the artifact, giving authors the option to address any significant blocking issues. After the kick-the-tires stage ends, communication can only address interpretation concerns for the produced results or minor syntactic issues in the submitted materials.
+      </p>
+
+    <p>We recommend authors to present and document artifacts in a way that the evaluation committee can use it and complete the evaluation successfully with minimal (and ideally no) interaction. To ensure that your instructions are complete, we suggest that you run through them on a fresh setup prior to submission, following exactly the instructions you have provided.
+      </p>
+
+    <p>We expect that most evaluations can be done on any moderately-recent desktop or laptop computer. In other cases and to the extent possible, authors have to arrange their artifacts so as to run in community research testbeds or will provide remote access to their systems (e.g., via SSH) with proper anonymization. If the artifact is aimed at full reproducibility of results, but they take a long time to obtain (e.g., because of a large number of experiments, such as in fault injection), authors should provide a shortcut or sampling mechanism. 
+      </p>
+
+    <h2>Distinguished Artifact Award</h2>
+    TBD
+    <!--
+    <p>All artifacts submitted will compete for a “<b>Distinguished Artifact Award</b>” that is sponsored by KAUST (<a href="https://www.kaust.edu.sa/">https://www.kaust.edu.sa/</a>), to be decided by the committee. This will be awarded to the artifact that (1) has the highest degree of reproducibility as well as ease of use and documentation, (2) allows other researchers to easily build upon the artifact’s functionality for their own research, and (3) substantially supports the claims of the paper. We anticipate that at most one artifact (paper) would get the award, though the committee reserves the right not to award any artifact in a given year if none of them meet the criteria for the award.
+      </p>
+    -->
+
+    <h2>Important dates</h2>
+    <p>In the following list, the important dates for the Artifact Evaluation (AE) are reported. Dates refer to AoE time (Anywhere on Earth).</p>
+    
+    <ul>
+    <li><b>Mar 19, 2025</b>: Notification to Authors (paper)   
+    <li><b>Mar 24, 2025</b>: Artifact Submission Deadline
+    <li><b>Apr 27, 2025</b>: Artifact Notification to Authors
+    <li><b>Apr 28, 2025</b>: Camera-ready Deadline (paper)
+    </ul>
+    
+    <h2>Volunteering for the Artifact Evaluation Committee</h2>
+
+    <p>AEC members will contribute to the conference by reviewing companion artifacts of papers accepted in the research track. We invite early-career researchers to join the AEC, including PhD students (e.g., in the second or third year of their studies), who are working in any topic area covered by DSN, see the <a href="cfpapers.html">Research Track Call for Contributions</a>. Participating in the AEC will allow you to familiarize yourself with research papers accepted for publication at DSN 2025, and to support experimental reproducibility and open-science practices.
+    </p>
+
+    <p>For a given artifact, you will be asked to evaluate its public availability, functionality, and/or ability to reproduce the results from the paper. You will be able to discuss with other AEC members and anonymously interact with the authors as necessary, for instance if you are unable to get the artifact to work as expected. Finally, you will provide a review for the artifact to give constructive feedback to its authors, discuss the artifact with fellow reviewers, and help award the paper artifact evaluation badges. You can be located anywhere in the world as all committee discussions will happen online.
+    </p>
+
+    <p>We expect that each member will evaluate 1-2 artifacts, and that each evaluation will take around 10–20 hours. AEC members are expected to allocate time to bid for artifacts they want to review, to read the respective papers, to evaluate and review the corresponding artifacts, and to be available for online discussion (if needed). Please ensure that you have sufficient time and availability (see also the indicative important dates). Please also ensure you will be able to carry out the evaluation confidentially and independently, without sharing artifacts or related information with others and limiting all the discussions to within the AEC.
+    </p>
+
+    <h2>Conflicts of Interest</h2>
+    <p>Authors and AEC members are asked to declare potential conflicts during the paper submission and reviewing process. In particular, a conflict of interest must be declared under any of the following conditions: (1) anyone who shares an institutional affiliation with an author at the time of submission, (2) anyone the author has collaborated or published within the last two years, (3) anyone who was the advisor or advisee of an author, or (4) is a relative or close personal friend of the authors. For other forms of conflict and related questions, authors must explain the perceived conflict to the track chairs.</p>
+    <p>AEC members who have conflicts of interest with a paper, including program co-chairs, will be excluded from any discussion concerning the paper.</p>
+
+    <h2>Guidelines for submitting/reviewing artifacts</h2>
+    <p>As guidance for submitting your artifact, please consider the following points. The Artifact Evaluation Committee will also consider these points to assign badges.</p>
+
+    <p>For the <b>"Available" badges</b>:</p>
+    <ul>
+      <li>Is the artifact publicly available through an open-access repository (Zenodo or Figshare)?</li>
+      <li>Is the artifact consistent and complete with respect to the paper?</li>
+      <li>Does it provide sufficient user documentation (e.g., command-line syntax)?</li>
+      <li>Can it potentially be used to support reproducibility of the paper (even if you could not run the artifact)?</li>
+      <li>Does it include a license that allows researchers to reuse and extend the artifact (e.g., for comparison purposes in a future paper)? Creative Commons licenses are a typical choice for open data.</li>
+    </ul>
+    <p>For the <b>"Reviewed" badges:</b></p>
+    <ul>
+      <li>Does the artifact include enough documentation about configuration and installation (e.g., on external dependencies, supported environments)?</li>
+      <li>Does it include instructions for a "minimum working example", and could you run it?</li>
+      <li>Does the artifact include documentation about its internals (e.g., organization of modules and folders, code comments for explaining non-obvious code) that is understandable for other researchers?</li>
+    </ul>
+    <p>For the <b>"Reproducible" badges:</b></p>
+    <ul>
+    <li>Does the documentation of the artifact explain which claims of the paper it can reproduce, and how to reproduce them?</li>
+    <li>Can you run the analysis automatically, with a reasonable effort and time/resource requirements?</li>
+    <li>Do the results of the execution support the claims of the paper?</li>
+      </ul>
+
+    <p>Additional suggestions:</p>
+    <ul>
+      <li>You are allowed to provide your artifact as a virtual machine. Even in that case, you should still provide source code and scripts that were used to build the virtual machine. </li>
+      <li>Please minimize the number of dependencies and the amount of hardware resources needed to run the artifact.</li>
+      <li>Please provide clear step-by-step instructions to install and run the artifacts. Remember to test them on a clear environment!</li>
+      <li>When providing instructions to users and reviewers, please provide the expected outputs (or any other side effect) of these instructions, and the estimated amount of human and compute time.</li>
+    </ul>
+    <p>See also:</p>
+    <ul>
+      <li>
+        <a href="https://www.linkedin.com/posts/robertonatella_dsn-2025-artifact-evaluation-guidelines-activity-7156309130809425920-lcJA">Artifact Evaluation Guidelines for DSN AEC</a>
+      <li>
+        <a href="https://blog.padhye.org/Artifact-Evaluation-Tips-for-Authors/">Artifact Evaluation: Tips for Authors – Primordial Loop (padhye.org)</a>
+      </li>
+      <li><a href="https://docs.google.com/document/d/1pqzPtLVIvwLwJsZwCb2r7yzWMaifudHe1Xvn42T4CcA/edit">HOWTO for AEC Submitters - Documenti Google</a></li>
+    </ul>
+    <h2>Submissions</h2>
+    <p>To submit your artifact for evaluation, please fill out the form on HotCRP at the following address: <a href="">TBD</a>. You will be asked to provide: </p>
+    <ul>
+      <li>Information about your DSN'25 Research Track submission;</li>
+      <li>The DOI with your artifact (should point to Zenodo or Figshare);</li>
+      <li>The badges you are applying for.</li>
+    </ul>
+    <p>Please note that you may be contacted by the Artifact Evaluation Committee through HotCRP (e.g., during the "kick-the-tires" phase). HotCRP will send you email notifications about incoming messages, from the address "TBD". You may consider to white-list this address in your spam filter.</p>
+    
+    <h2>Acknowledgements</h2>
+    <p>We are grateful to the Artifact Evaluation Committees of previous conferences in Systems Research (<a href="https://sysartifacts.github.io/">https://sysartifacts.github.io/</a>) and Security Research (<a href="https://secartifacts.github.io/">https://secartifacts.github.io/</a>) for kindly sharing their previous experience with the evaluation process.
+    </p>
+
+    <h2><b>Artifact Track Co-Chairs:</b></h2>
+    Lishan Yang, George Mason University, USA</br>
+    Renato Mancuso, Boston University, USA</br>
+
+    <h2><b>Contact</b></h2>
+      <p>For further information please send an email to <a href="mailto:artifacts@dsn.org"
+              target="_blank">artifacts@dsn.org</a>
+      </p>
+
+    
+  </div>
+    
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-grey">
+  <div class="w3-row-padding">
+    <h3>Sponsors</h3>
+    <div class="w3-half">
+      <img src="images/logoIEEE2.png" alt="IEEE Logo" style="width:50%">
+    </div>
+    <div class="w3-half">
+      <img src="images/logoIFIP.png" alt="IFIP Logo" style="width:35%">
+    </div>
+  </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24" id="acknowledgments">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+includeHTML();
+
+function accordianFunc(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

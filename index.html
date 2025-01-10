@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<title>DSN 2025</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="images/DSN_logo.png"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+.spacer {
+  display: inline-block;
+  width: 56.5%;
+}
+.rounded{
+  border-radius: 100%;
+}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div w3-include-html="sidebar.html"></div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header>
+    <a href="#"><img src="images/DSN_logo.png" style="width:65px;" class="w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+      <h1 class=w3-text-indigo><b>DSN 2025</b></h1>
+      <h3><b>The 55th Annual IEEE/IFIP International Conference on Dependable Systems and Networks</b></h3>
+      <h3 class=w3-text-indigo>Naples, Italy, June 23-26, 2025</h3>
+    </div>
+  </header>
+  
+  <!-- Welcome -->
+  <div class="w3-container w3-padding-large">
+	  <div class="w3-card-4 w3-content w3-display-container" style="max-width:1120px">
+        <a href="#acknowledgments"><img src="images/naples_banner_2.jpeg" alt="Naples Skyline" style="width:100%"></a>
+    </div>
+    <div class="w3-section w3-bottombar w3-padding-16"></div>
+  </div>
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b>Welcome</b></h4>
+
+	<p>
+    		On behalf of the Organizing Committee, we extend you a warm welcome to the 55th Annual IEEE/IFIP International Conference on Dependable Systems and Networks (DSN 2025), organized by Università degli Studi di Napoli Federico II, Italy. Over the years DSN has become a forum to present the best world research in the fusion between dependability and security research, understanding the need to simultaneously fight against accidental faults, intentional cyber-attacks, design errors, and unexpected operating conditions. We are looking forward to a conference filled with ideas from industry and academia. 
+	</p>
+
+	<p>
+    		DSN 2025 will be held in Naples, Italy from 23 to 26 June 2025. 
+    		Naples, an enchanting city of sea and culture. Naples was founded by Greeks in the first millennium BC and is one of the oldest continuously inhabited urban areas in the world.
+    		Naples is the capital of Campania lies in the bay of the same name next to the volcano Vesuvius and offers a spectacular view as far as the islands of Capri, Ischia, and Procida.
+    		Naples' historic city center is the largest in Europe and has been designated as a UNESCO World Heritage Site. 
+    		A wide range of culturally and historically significant sites are nearby, including the Palace of Caserta and the Roman ruins 
+    		of Pompeii and Herculaneum. Naples is also known for its natural beauties, such as Posillipo, Phlegraean Fields, Nisida, and Vesuvius.
+    		Neapolitan cuisine is noted for its association with pizza, which originated in the city, as well as numerous other local dishes.
+	</p>
+<!--
+	<p>
+		The 2025 edition offers an attractive program. The first day features 3 workshops: Data-Centric Dependability and Security, Dependable and Secure Machine Learning, and Safety and Security of Intelligent Vehicles. The following three days are dedicated to research track presentations, an industry track, fast abstracts, and student forum presentations and discussions.
+	</p>
+
+	<p>
+		This year we have three outstanding keynote speakers. Elaine Shi, Carnegie Mellon University, will present “Foundations of Transaction Fee Mechanism Design”. Nicholas Carlini, Google Brain, will talk about “Machine learning is becoming less dependable”. Franck Capello, Argonne National Laboratory, will present “Resilience and fault tolerance for extreme-scale scientific computing”.
+	</p>
+-->
+	<p>
+    		We look forward to meeting you in Naples!!!
+	</p>
+
+  <!--
+	<p>
+		Last, but not least, the program includes a session dedicated to our colleague and friend Gilles Muller, celebrating his research and his contributions to the DSN community over the years.
+	</p>
+
+	<p>
+		The DSN conference would not have been possible without the support, hard work, and dedication of the steering committee, organizing committee, program committees, and the volunteers. Many thanks to our sponsors, IEEE, IFIP, Siemens, Johns Hopkins University, KAUST, Intel, and Lancaster University.
+	</p>
+-->
+	<p>
+    <img src="images/oc/foto_cinque.jpeg" height= "60" width= "60" class="rounded"/> Marcello Cinque, Università degli Studi di Napoli Federico II<br>
+	  <img src="images/oc/foto_domenico_cotroneo.jpeg" height= "60" width= "60" class="rounded"/> Domenico Cotroneo, Università degli Studi di Napoli Federico II<br><br>
+	  DSN 2025 General Chairs <br>
+    Email: <a href="mailto:chair@dsn.org">chair@dsn.org</a>
+	</p>
+
+  <h4><b>News</b></h4>
+
+	<ul>
+    <!--
+    <li><b>January 23 2025</b>: Poster paper submission deadline is extended to January, 31. Please see the <a href='https://dsn2025uq.github.io/cfposter.html'>call for poster papers</a>.</li>
+    <li><b>August 31 2023</b>: Call for Tutorial Proposals is now available. Please see <a href="cftutorial.html">Call for Tutorial Proposals</a> for more info.</li>
+    <li><b>August 28 2023</b>: Research Track Call for Contributions is now available. Please see <a href="cfpapers.html">Research Track</a> for more info.</li>
+    <li><b>August 28 2023</b>: Artifacts Call for Contributions is now available. Please see <a href="cfartifacts.html">Artifacts</a> for more info.</li>
+    -->
+  </ul>>
+
+  </div>
+
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-grey">
+  <div class="w3-row-padding">
+    <h3>Sponsors<span class="spacer"></span>Hosted by</h3>
+    <div class="w3-third">
+      <img src="images/logoIEEE2.png" alt="IEEE Logo" style="width:50%">
+    </div>
+    <div class="w3-third">
+      <img src="images/logoIFIP.png" alt="IFIP Logo" style="width:35%">
+    </div>
+    <div class="w3-third">
+      <a href='www.unina.it'>
+      <img src="images/Federico_II_University_Logo.svg" alt="UNINA Logo" style="width:50%"></a>
+    </div>
+  </div>
+  </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24" id="acknowledgments">
+    Banner image courtesy of <a href="https://www.comune.napoli.it/">Comune di Napoli</a><br>
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+includeHTML();
+
+function accordianFunc(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

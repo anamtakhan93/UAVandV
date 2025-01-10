@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<title>Fast Abstracts</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="images/DSN_logo.png"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-indigo.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div w3-include-html="sidebar.html"></div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="dsnHeader">
+    <div w3-include-html="header.html"></div>
+  </header>
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px; text-align:justify">
+    <h1><b>Fast Abstracts Sessions</b></h1>
+	<h4><b>Thursday June 30th</b></h4>
+	<br />
+
+	<!-- Session #1 -->
+	<div class="w3-card-4" id="session1">
+		<header class="w3-container w3-padding w3-theme-d2 w3-center">
+				<span class="title"><font size="4"><strong>Fast Abstracts #1: Attestation, Integrity, and Verification</strong></font></span><br />
+				<span class="author"><font size="3">10:30 AM - 12:00 PM</font></span><br />
+				<span class="author"><font size="3">Chair: Samuel Jero</font></span><br />
+		</header>
+		<div class="w3-container">
+			<p align="justify">
+            <b>(*) Formal Foundations for SCONE Attestation</b> [<a href="https://www.youtube.com/watch?v=HJzdF5GTWxQ">teaser video</a>]<em>(*) this paper will not be presented at the conference</em><br>
+            Muhammad Usama Sardar and Christof Fetzer
+			</p>
+
+			<p align="justify">
+            <b>Effectiveness on C Flaws Checking and Removal</b> [<a href="https://www.youtube.com/watch?v=OYPFAlpa4ss">teaser video</a>] <br>
+            João Inácio and Ibéria Medeiros
+			</p>
+
+            <p align="justify">
+            <b>Towards Fuzzing Target Lines</b><br>
+            Nuno Neves
+            </p>
+
+		</div>
+		<br>
+	</div>
+	<!-- End Session -->
+	<br><br>
+
+	<!-- Session #2 -->
+	<div class="w3-card-4" id="session2">
+		<header class="w3-container w3-padding w3-theme-d2 w3-center">
+				<span class="title"><font size="4"><strong>Fast Abstracts #2: Frameworks and Algorithms for Emerging Applications</strong></font></span><br />
+				<span class="author"><font size="3">1:30 PM - 3:30 PM</font></span><br />
+				<span class="author"><font size="3">Chair: Samuel Jero</font></span><br />
+		</header>
+		<div class="w3-container">
+            <p align="justify">
+            <b>A Policy Driven AI-Assisted PoW Framework</b> [<a href="https://www.youtube.com/watch?v=s4wnqc6D3qY">teaser video</a>] <br>
+            Trisha Chakraborty, Shaswata Mitra, Sudip Mittal and Maxwell Young
+            </p>
+
+			<p align="justify">
+            <b>Modeling Composition of Cloud Services with Complex Dependencies for Availability Assessment</b> [<a href="https://www.youtube.com/watch?v=gYS0kqhCpQ8">teaser video</a>] <br>
+            Xingjian Zhang and Long Wang
+			</p>
+
+			<p align="justify">
+            <b>Real-Time Digital Filtering for IoT Data in Programmable Network Switches</b> [<a href="https://youtube.com/watch?v=HcWTEn1kb9s">teaser video</a>]<br>
+            Nathaniel Nauman, Ruochong Wu and Saurabh Bagchi
+			</p>
+
+			<p align="justify">
+            <b>Personalized cryptography algorithms – a comparison between classic and cognitive methods</b> [<a href="https://www.youtube.com/watch?v=_Frn6hRazys">teaser video</a>] <br>
+            Radosław Bułat and Marek Ogiela
+			</p>
+
+		</div>
+		<br>
+	</div>
+	<!-- End Session -->
+	<br><br>
+
+</div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-grey">
+  <div class="w3-row-padding">
+    <h3>Sponsors</h3>
+    <div class="w3-half">
+      <img src="images/logoIEEE2.png" alt="IEEE Logo" style="width:50%">
+    </div>
+    <div class="w3-half">
+      <img src="images/logoIFIP.png" alt="IFIP Logo" style="width:35%">
+    </div>
+  </div>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24" id="acknowledgments">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>
+  </div>
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+includeHTML();
+
+function accordianFunc(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

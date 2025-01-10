@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+<title>Workshops</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="images/DSN_logo.png" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Raleway", sans-serif
+  }
+</style>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-collapse w3-white" style="z-index:3;width:300px;" id="mySidebar"><br>
+    <div w3-include-html="sidebar.html"></div>
+  </nav>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+    title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:300px">
+
+    <!-- Header -->
+    <header id="dsnHeader">
+      <div w3-include-html="header.html"></div>
+    </header>
+
+    <!-- Call for papers -->
+    <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+      <h1><b>DSN-2025: Workshops</b></h1>
+      <p class="rtejustify"> The workshops at DSN'2025 aim to provide a forum where researchers can gather and engage in
+        discussions about various aspects of dependability-related research and its practical applications. These
+        workshops cover a wide range of topics, serving
+        as incubators for specific scientific communities with shared research goals. They also offer a valuable
+        opportunity for researchers to exchange and explore scientific ideas in their early stages, well before reaching
+        the level of maturity required for conference or journal publication.
+      </p>
+      <hr style="border: 1.5px solid rgb(170, 169, 169);">
+
+      List of Accepted workshops TBD
+      <!--
+      <h2><b>Workshop on Dependable Computing for Complex Systems</b></h2>
+      <p><b>Website:</b> <a href="https://www.dccs2025.com/">https://www.dccs2025.com/</a></p>
+      <p><b>Description:</b></p>
+      <p>In the era of Industry 4.0, software applications, such as cyber-physical systems (CPS), server systems,
+        machine learning-based systems, databased systems, and real-time systems, are playing an increasingly important
+        role in both industrial world and our daily lives. These systems tend to be composed of many different
+        components which may interact with each other and exhibit complex behaviors. Also, in these systems,
+        dependability is critical, as failures or requirement violations of these systems may lead to disruptive
+        results, even the loss of human lives. Nowadays, extensive studies, including both formal methods and
+        engineering techniques, have been conducted, aiming to improve the systems’ safety, reliability,
+        maintainability, availability, etc. However, for complex systems, the gap between the huge number of interacting
+        components and the salability of current approaches still exists. Nevertheless, we believe the demand of
+        dependable complex systems motivates the development of novel techniques or feasible adaptations of existing
+        techniques, through addressing more issues such as components’ interactions or real-time scheduling. DCCS seeks
+        to provide an international venue to discuss the advanced discoveries and emerging trends related to the
+        dependability of complex systems in both the academic society and industrial world. This workshop will not only
+        explore how we can apply the emerging dependability theories and techniques to model and evaluate the complex
+        systems, but also the methods or tools for localizing and fixing the system vulnerabilities to improve the
+        system dependability.</p>
+
+      <h2><b>Workshop on Dependable and Secure Machine Learning</b></h2>
+      <p><b>Website:</b> <a href="https://dependablesecureml.github.io/">https://dependablesecureml.github.io/</a></p>
+      <p><b>Description:</b></p>
+      <p>Machine learning (ML) is increasingly used in critical domains such as health and wellness, criminal sentencing
+        recommendations, commerce, transportation, human capital management, entertainment, space technology, and
+        communication. The design of ML systems has mainly focused on developing models, algorithms, and datasets on
+        which they are trained to demonstrate high accuracy for specific tasks such as object recognition and
+        classification. ML algorithms typically construct a model by training on a labelled training dataset, and their
+        performance is assessed based on the accuracy in predicting labels for unseen (but often similar) testing data.
+        This is based on the assumption that the training dataset is representative of the inputs that the system will
+        face in deployment. However, in practice, there are many unexpected accidental, and adversarially-crafted
+        perturbations on the ML inputs that might lead to violations of this assumption. ML algorithms are also often
+        over-confident about their predictions when processing such unexpected inputs. This makes it difficult to deploy
+        them in safety-critical settings where one needs to rely on the ML predictions to make decisions or revert to a
+        failsafe mode. Further, ML algorithms are often executed on special-purpose hardware accelerators, which could
+        be subject to faults and attacks. Thus, there is a growing concern regarding the reliability, safety, security &
+        privacy, and accountability of ML-assisted systems.</p>
+
+      <h2><b>Workshop on Safety and Security of Intelligent Vehicles </b></h2>
+      <p><b>Website:</b> <a href="https://sites.google.com/icmc.usp.br/ssiv">https://sites.google.com/icmc.usp.br/ssiv</a></p>
+      <p><b>Description:</b></p>
+      <P>Over the last years, aerial and ground vehicles as well as mobile robot systems have been receiving an
+        increased number of electronic components, connected through wireless networks and running embedded software.
+        This strong integration between dedicated computing devices and the physical environment, composes a
+        Cyber-Physical System (CPS). CPS have thus become part of common vehicles, accessible to everyone, such as
+        automobiles or unmanned aerial vehicles (UAVs). Furthermore, as processing power increases and software becomes
+        more sophisticated, these vehicles gain the ability to perform complex operations, becoming more autonomous,
+        efficient, adaptable, comfortable, safe and usable. These are known as Intelligent Vehicles (IV).</p>
+
+      <P>As processing capabilities and software sophistication continue to advance, these vehicles are evolving into
+        more autonomous, efficient, adaptable, comfortable, safe, and usable entities. Unmanned aerial vehicles (UAVs),
+        in particular, are offering flexible support for diverse missions, enabling deployment in scenarios that were
+        previously challenging or inaccessible. This is achieved through seamless integration with sensor networks
+        capable of monitoring a wide range of applications. On the road, automobiles now provide features such as active
+        safety, adaptive cruise control, park assistance, automatic climate control, navigation support, and, in the
+        near future, vehicle-to-vehicle communication. With networking capabilities, the myriad of devices within
+        vehicles are seamlessly integrated into the Internet of Things (IoT) landscape.</p>
+
+      <P>Given their potential impact on human lives and high-value assets, these systems are classified as critical.
+        Safety emerges as a paramount concern for both developers and users. However, the combination of high mobility
+        and wireless communications has further increased the exposure of such systems to malicious threats and to
+        faults deriving from uncertain connectivity or communication timeliness. Non-functional requirements like
+        security and real-time operation have thus become harder to fulfill, creating new challenges to these
+        safety-critical embedded systems. The environment of humans will continue to evolve to interactive IoT that is
+        going to include mobile (flying, driving, floating, rolling, diving, walking, etc) objects that raise numerous
+        challenging issues. Observing the current trend in the development of self-driving cars, one can only infer that
+        artificial intelligence (through machine learning) is going to play a crucial role in future intelligent
+        vehicles. However, the complexity of such algorithms decreases their level of trust and integrating them in
+        critical systems is a far-reaching research issue. Although advanced hardware components like multi-core
+        processors, GPUs, or FPGAs are a formidable opportunity to deploy complex functionalities in intelligent
+        vehicles, they raise new challenges for certification, verification of real-time properties, safety, and
+        security.</p>
+
+      <P>This milestone marks the remarkable tenth edition of the workshop, a testament to the enduring success and
+        impact cultivated through the preceding events. As we embark on this historic edition, it becomes increasingly
+        apparent that the landscape of challenges in ensuring Safety and Security in Intelligent Vehicles, whether
+        connected to the Internet or not, is expanding at an unprecedented pace. The wealth of open challenges
+        underscores the critical need for sustained research initiatives and in-depth discussions on these matters—a
+        need that has gained momentum and resonance on a global scale. As we celebrate a decade of collective effort,
+        the 10th edition serves as a poignant reminder of the continuous evolution and significance of our shared
+        commitment to advancing the field.</p>
+
+      <P>Therefore, the workshop will keep its focus on exploring the challenges and interdependencies between security,
+        safety, real-time, and certification/standards, which emerge when introducing networked, autonomous, and
+        cooperative functionalities. SSIV aims at joining together in an active debate, researchers, and practitioners
+        from several communities, namely dependability and security, real-time and embedded systems, intelligent
+        transportation, and mobile robot systems.</p>
+
+      <p>A non-exhaustive list of topics of interest include the following:
+      <p>
+      <ul>
+        <li>Architecture, design, implementation, and management of safe and secure intelligent vehicles</li>
+        <li>Functional safety, standards, and certification</li>
+        <li>Security threats to cyber-physical systems</li>
+        <li>Secure data communication in vehicular networks</li>
+        <li>Collision prediction and avoidance</li>
+        <li>Safety and security issues in ADAS</li>
+        <li>Real-time perception and sensor fusion for safe autonomous driving</li>
+        <li>Internet of (Secure) Things (flying, driving, floating, diving, etc)</li>
+        <li>Safe integration of Artificial Intelligence in intelligent vehicles</li>
+        <li>Advanced hardware for self-driving cars and their impact on safety/security</li>
+        <li>Regulation issues in intelligent vehicles</li>
+        <li>Practical experiences and testbeds related with safety and security of intelligent vehicles</li>
+        <li>Industrial experiences and best practices relevant to safety and security of intelligent vehicles</li>
+        <li>Security and Information Technology - Standards</li>
+        <li>Threats against traffic management systems</li>
+      </ul>
+
+
+
+
+      <h2><b>Workshop on the Verification & Validation of Dependable Cyber-Physical Systems</b></h2>
+      <p><b>Website:</b> <a href="https://verdi-workshop.github.io/2025/">https://verdi-workshop.github.io/2025/</a></p>
+      <p><b>Description:</b></p>
+      <p>Cyber-Physical Systems (CPS) are a class of engineering systems where computation and
+        communication interact with physical processes, providing complex, situation-aware, and often
+        safety-, security-, or mission-critical ecosystems and services. The fast increase and availability of
+        communication bandwidth and computational power, as well as emerging computing paradigms
+        such as Cloud Computing, Edge Computing, and Deep Learning, are pushing forward CPS research
+        and development, and establishing them as promising engineering solutions to address
+        challenges arising in areas as diverse as aerospace, automotive, energy, disaster response, health
+        care, smart farming, manufacturing, city management, among others.</p>
+
+      <p>A key property that CPS are expected to exhibit is that of dependability, that is, the ability to
+        provide services that can be trusted within well determined time-periods, and equally important,
+        that those service guarantees hold even when the system is subject to faults and attacks. A key
+        ingredient to ensure dependability is thus to successfully apply verification & validation (V&V)
+        techniques and attest the desired levels of safety, security, and privacy. Here V&V refers to the
+        process of determining whether the requirements for a system or component are complete and
+        correct, the products of each development phase fulfil the requirements or conditions imposed
+        by the previous phase, and the final system or component complies with the specified
+        requirements.1 This is a challenging task that comes with significant time and cost implications
+        for all the organizations involved in the build-up and evaluation of CPS. This challenge becomes
+        even more demanding with the incorporation of more and more AI components (software and
+        hardware) enabled by the notion of Compute Continuum into the operational capabilities of CPS
+        for handling tasks that are increasingly complex.</p>
+
+      <p>The VERDI workshop aims at serving as a discussion forum focused on the area of V&V as a means
+        to guarantee dependability of complex, potentially automated/autonomous CPS. We welcome
+        submissions in IEEE two-column conference style in two formats: short papers (up to 4 pages)
+        and full papers (up to 8 pages). The workshop covers all aspects related to the dependability
+        evaluation (with special focus on <b>safety</b> and <b>security</b>) of safety-critical CPS using techniques such
+        as <i>fault/attack-injection, static and/or dynamic formal verification, semi-formal analysis,
+        simulation, and testing</i>. Topics include, but are not limited to:</p>
+
+      <ul>
+        <li>Safety/security risk assessment and assurance</li>
+        <li>Analysis of threats and vulnerabilities</li>
+        <li>In-the-loop and model-based analysis and assessment</li>
+        <li>Architecture-driven assurance of safety and security</li>
+        <li>Interplay between safety and security</li>
+        <li>Tools for validation and verification</li>
+        <li>Dependability analysis using simulation and experimental measurement</li>
+        <li>Methods for qualification, assurance, and certification</li>
+        <li>Test space exploration and test space pruning</li>
+        <li>Distributed and real-time monitoring and control</li>
+        <li>Analysis of probabilistic, real-time, or hybrid systems</li>
+      </ul>
+      
+      <hr style="border: 1.5px solid rgb(170, 169, 169);">
+
+      <!--   <h2><b>List of Topics</b></h2>
+  <p>DSN is interested in workshop topics that represent either complementary areas to the main conference or a large, active subarea. Topics from recent DSN workshops include:</p>
+  <ul>
+      <li>Adaptive, Mobile and Ubiquitous System Dependability</li>
+      <li>Analysis of Reliability and Security Data</li>
+      <li>Cellular Network Dependability</li>
+      <li>Clouds, Data Centers, Virtual Machines and Containers’ Dependability</li>
+      <li>Cyber-physical Systems Dependability</li>
+      <li>Dependability Assessment of Complex Systems</li>
+      <li>Dependable and Secure Nanocomputing</li>
+      <li>Dependability and Security of System Operation</li>
+      <li>Dependability Issues in Software Defined Networks</li>
+      <li>Fault Tolerance for Extreme Scale Systems</li>
+      <li>Resilient Computing</li>
+      <li>Safety and Security of Intelligent Vehicles</li>
+      <li>Trustworthiness of Smart Grids</li>
+      <li>Blockchains</li>
+      <li>Distributed ledgers</li>
+      <li>Infrastructures for Machine Learning</li>
+      <li>Cyber resilience regulations and frameworks</li>
+      <li>Cyber resilience strategies and techniques</li>
+  </ul>
+
+    -->
+  <h2><b>Acceptance and Publication</b></h2>
+  <p>Acceptance will be based on an evaluation of the workshop's potential for generating useful results, the timeliness of and expected interest in the topic, and the proposers’ ability to lead a successful workshop.</p>
+
+  <p>Accepted workshops will have a two-page proceedings-format summary (generated by the workshop organizers) published in the Main Proceedings of the conference. Written contributions to the workshop itself (summaries, short papers, etc.) will
+      be included in the supplement to the DSN Proceedings (DSN-W volume) and made available on IEEE Xplore. The workshop web pages will be linked through the main DSN website (www.dsn.org) and the call for papers will be advertised through
+      the DSN mailing lists.</p>
+
+  <p>Organizers are expected to perform any additional advertising in related communities outside the main DSN community, to create and maintain the workshop website, arrange for the collection and refereeing of submissions, and to co-ordinate
+      the collection and delivery of camera ready material and IEEE copyright transfers.</p>
+
+  <p>Please submit all workshop proposals by 15 Dec 2024 preferably as a PDF file, via e-mail to <a href="mailto:workshops@dsn.org" target="_blank">workshops@dsn.org</a>.</p>
+
+  <p>Workshop proposers will be notified of the outcome of their submission by TBD. The timelines for submissions to the accepted workshops will be communicated directly to the proposers.</p>
+
+
+  <h2><b>Format of Proposals</b></h2>
+  <p>A workshop proposal consists of a descriptive proposal that is not more than 4 pages in length and contains the following information:</p>
+  <ul>
+      <li>Title and description of the workshop including motivations, goals, and relevance to the dependability community.</li>
+      <li>Names and contact information of the organizers, including a brief statement on their background and past workshop experience.</li>
+      <li>A description of the workshop planning processes, including the invitation and selection of participants, the refereeing of papers, a tentative program committee if available, and any other pre-workshop activities.</li>
+      <li>A summary of the planned workshop activities including length of time (full day or half day), space required (i.e., room capacity), and the expected workshop outputs. A desired schedule, i.e., approximate number of papers, invited talks,
+          panels, and/or discussion sessions.</li>
+      <li>Whether the workshop is new or an ongoing workshop. Information on past editions of the workshop (if applicable) including:</li>
+      <ul>
+          <li>History and frequency of the workshop</li>
+          <li>Previous conference co-locations</li>
+          <li>URLs, if available</li>
+          <li>Approximate attendance (for each past edition)</li>
+          <li>How papers were published (website, IEEE, ACM, etc.).</li>
+          <li>Communities from which participation is expected</li>
+      </ul>
+  </ul>
+ 
+
+      <h2><b>Workshop Chairs</b></h2>
+      Saurabh Bagchi, Purdue University, USA</br>
+      Luigi Romano, Università degli Studi di Napoli "Parthenope", Italy
+
+      <h2><b>Contact</b></h2>
+      <p>For further information please send an email to <a href="mailto:workshops@dsn.org"
+          target="_blank">workshops@dsn.org</a></p>
+      
+          <!--
+    <h1><b>DSN-2025: Workshops</b></h1>
+
+    <p>The workshops at the DSN 2025 provide a forum for groups of researchers
+    to discuss topics in dependability-related research and practice. DSN
+    workshops can be quite diverse. They serve as incubators for scientific
+    communities that form and share a particular research agenda. They also
+    provide opportunities for researchers to exchange and discuss scientific
+    ideas at an early stage, before they have matured to warrant conference or
+    journal publication.</p>
+
+      <p>The list of workshops will be coming soon.</p>
+    -->
+      <!--
+    <h2><b>Workshop on Data-Centric Dependability and Security (DCDS)</b></h2>
+    <p><b>Website:</b> <a
+    href="http://dcds.lasige.di.fc.ul.pt">http://dcds.lasige.di.fc.ul.pt/</a></p>
+
+    <p><b>Description:</b></p>
+
+    <p>The workshop aims at providing researchers with a forum to exchange and
+    discuss scientific contributions and open challenges, both theoretical and
+    practical, related to the use of data-centric approaches that promote the
+    dependability and cybersecurity of computing systems. We want to foster
+    joint work and knowledge exchange between the dependability and security
+    communities, and researchers and practitioners from areas such as machine
+    and statistical learning, and data science and visualization. The workshop
+    provides a forum for discussing novel trends in data-centric processing
+    technologies and the role of such technologies in the development of
+    resilient systems. It aims to discuss novel approaches for processing and
+    analyzing data generated by the systems as well as information gathered
+    from open sources, leveraging from data science, machine and statistical
+    learning techniques, and visualization. The workshop shall contribute to
+    identify new application areas as well as open and future research
+    problems, for data-centric approaches to system dependability and security.</p>
+
+    <p><b>Important dates:</b></p>
+
+    <ul>
+    <li>Workshop submission: April 4 
+    <li>Workshop notification: <del>April 25</del> April 29
+    <li>Workshop Camera-ready: <del>May 2</del> May 3
+    </ul>
+
+    <h2><b>Workshop on Artificial Intelligence To Security</b></h2>
+    <p><b>Website:</b> <a
+    href="https://aits2022.github.io/">https://aits2022.github.io/</a></p>
+
+    <p><b>Description:</b></p>
+
+    <p>With the development of the Internet, cyber security becomes more and
+    more important. Facing increasing cyber-attacks, the traditional methods to
+    protect information systems are becoming lagging and powerless.
+    Fortunately, artificial intelligent technology offers a completely new and
+    challenging opportunity to the security practitioners. The aim of Internet
+    Workshop on Artificial Intelligence To Security (AITS 2022) is to provide a
+    platform to the researchers and practitioners from both academia as well as
+    industry to meet and share knowledge and results in theory, methodology and
+    applications in cyberspace security by artificial intelligent
+    technology.</p>
+    
+    <p><b>Important dates:</b></p>
+
+    <ul>
+    <li>Workshop submission: <del>March 22</del> April 5
+    <li>Workshop notification: <del>April 12</del> April 25
+    <li>Workshop Camera-ready: <del>April 21</del> May 2
+    </ul>
+
+    <h2><b>Workshop on Dependable and Secure Machine Learning (DSML)</b></h2>
+    <p><b>Website:</b> <a href="https://dependablesecureml.github.io/index.html">https://dependablesecureml.github.io/index.html</a></p>
+
+    <p><b>Description:</b></p>
+
+    <p>Machine learning (ML) is increasingly used in critical domains such as
+    health and wellness, criminal sentencing recommendations, commerce,
+    transportation, human capital management, entertainment, and communication.
+    The design of ML systems has mainly focused on developing models,
+    algorithms, and datasets on which they are trained to demonstrate high
+    accuracy for specific tasks such as object recognition and classification.
+    Machine learning algorithms typically construct a model by training on a
+    labeled training dataset and their performance is assessed based on the
+    accuracy in predicting labels for unseen (but often similar) testing data.
+    This is based on the assumption that the training dataset is representative
+    of the inputs that the system will face in deployment. However, in practice
+    there are a wide variety of unexpected accidental, as well as
+    adversarially-crafted, perturbations on the ML inputs that might lead to
+    violations of this assumption. ML algorithms are also often over-confident
+    about their predictions when processing such unexpected inputs. This makes
+    it difficult to deploy them in safety critical settings where one needs to
+    be able to rely on the ML predictions to make decisions or revert back to a
+    failsafe mode. Further, ML algorithms are often executed on special-purpose
+    hardware accelerators, which may themselves be subject to faults. Thus,
+    there is a growing concern regarding the reliability, safety, security, and
+    accountability of machine learning systems.</p>
+
+    <p>The DSN Workshop on Dependable and Secure Machine Learning (DSML) is an
+    open forum for researchers, practitioners, and regulatory experts, to
+    present and discuss innovative ideas and practical techniques and tools for
+    producing dependable and secure ML systems. A major goal of the workshop is
+    to draw the attention of the research community to the problem of
+    establishing guarantees of reliability, security, safety, and robustness
+    for systems that incorporate increasingly complex ML models, and to the
+    challenge of determining whether such systems can comply with requirements
+    for safety-critical systems. A further goal is to build a research
+    community at the intersection of machine learning and dependable and secure
+    computing.</p>
+
+    <p><b>Important dates:</b></p>
+    <ul>
+    <li>Workshop submission: March 28 (AoE) 
+    <li>Workshop notification: April 18 
+    <li>Workshop Camera-ready: May 2
+    </ul>
+
+    <h2><b>Workshop on Safety and Security in Intelligent Vehicles (SSIV)</b></h2>
+    <p><b>Website:</b> <a href="https://sites.google.com/view/ssiv">https://sites.google.com/view/ssiv</a></p>
+
+    <p><b>Description:</b></p>
+
+    <p>This will be the eighth edition of the SSIV workshop, aimed at
+    continuing the success of previous editions. The vast range of open
+    challenges to achieve Safety and Security in Intelligent Vehicles (with or
+    without connection with the Internet) is a fundamental reason that
+    justifies the numerous research initiatives and wide discussion on these
+    matters, which we are currently observing everywhere.</p>
+
+    <p>The successful pairing of man and machine, represented by robotics
+    solutions that augment humans, has the potential to make our workforce
+    safer and more productive and provide a non-conventional way of
+    transportation. Therefore, the workshop will keep its focus on exploring
+    the challenges and interdependencies between security, real-time, safety
+    and certification, which emerge when introducing networked, autonomous and
+    cooperative functionalities.</p>
+
+    <p><b>Important dates:</b></p>
+    <ul>
+    <li>Workshop submission: <del>March 28</del> April 4
+    <li>Workshop notification: <del>April 22</del> April 25
+    <li>Workshop Camera-ready: <del>April 29</del> May 2
+    </ul>
+  -->
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-32 w3-grey">
+      <div class="w3-row-padding">
+        <h3>Sponsors</h3>
+        <div class="w3-half">
+          <img src="images/logoIEEE2.png" alt="IEEE Logo" style="width:50%">
+        </div>
+        <div class="w3-half">
+          <img src="images/logoIFIP.png" alt="IFIP Logo" style="width:35%">
+        </div>
+      </div>
+    </footer>
+
+    <div class="w3-black w3-center w3-padding-24" id="acknowledgments">
+      Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+        class="w3-hover-opacity">w3.css</a>
+    </div>
+
+    <!-- End page content -->
+  </div>
+
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /* Loop through a collection of all HTML elements: */
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /* Make an HTTP request using the attribute value as the file name: */
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function () {
+            if (this.readyState == 4) {
+              if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+              if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+              /* Remove the attribute, and call this function once more: */
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /* Exit the function: */
+          return;
+        }
+      }
+    }
+    includeHTML();
+
+    function accordianFunc(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+
+</body>
+
+</html>
