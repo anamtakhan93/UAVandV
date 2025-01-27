@@ -1,0 +1,12 @@
+DroneIP = 127.0.0.1:14540
+MissionPath = /home/anamta/DronekitScript/DEI_3.plan
+InjectionType = Time
+InjectionTimeStart = 90
+InjectionTimeEnd = 96
+InjectionLocation = [0,1123344]
+InjectionRadius = 5
+FaultType = Software
+FaultTarget = IMU
+FaultSubType = FixedValues
+UseML = 0
+Values = [0, 0, 0, 0, 0, 0, 0]

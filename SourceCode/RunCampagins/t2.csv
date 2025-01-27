@@ -1,0 +1,8 @@
+"Flight Controller","0"
+"Gezebo World File Path","/home/anamta/Downloads/empty.world"
+"Number of UAV Models","2"
+"a","iris","127.0.0.1","/home/anamta/DronekitScript/DEI_2.plan"
+"b","iris","127.0.0.1","/home/anamta/DronekitScript/DEI_3.plan"
+"Faulty Run","GPS","Fixed Values","90","119","120","0","0","0","0","0","0","0","[a;b]"
+"Faulty Run","IMU","Fixed Values","90","96","120","0","0","0","0","0","0","0","[a]"
+"Faulty Run","IMU","Freeze Values","90","110","120","0","0","0","0","0","0","0","[a;b]"
