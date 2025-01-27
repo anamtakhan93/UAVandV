@@ -583,6 +583,23 @@ void VehicleGPSPosition::Publish(const sensor_gps_s &gps, uint8_t selected)
 							gps_output.alt = gps.alt + (DoubleValues[2] * ZigZag);
 
 
+						}else if(FaultSubType.find("Custom") != std::string::npos){
+							//Custom Fault
+							PX4_INFO("----------------------------------------------------injecting gps Custom fault");
+							
+							std::string command = "cd /home/[path]/CustomFaults && ./predictLatLonAlt " 
+                     							 + std::to_string(gps_previous.lat) + " " 
+                   							   + std::to_string(gps_previous.lon) + " " 
+                   							   + std::to_string(gps_previous.alt);
+
+							// Execute the command and capture the output
+							std::string output = exeCmd(command.c_str());
+
+							double customLat = 0.0, customLon = 0.0, customAlt = 0.0;
+							sscanf(output.c_str(), "%lf %lf %lf", &gps_output.lat, &gps_output.lon, &gps_output.akt);
+
+
+
 						}else{
 							gps_output.lat = gps.lat;
 							gps_output.lon = gps.lon;
@@ -752,31 +769,6 @@ void VehicleGPSPosition::Publish(const sensor_gps_s &gps, uint8_t selected)
 	}
 	
 	
-	
-	
-	if ((UseML > 0) && (gps_previous.lat > 10) && GetDistance3D(double(gps_previous.lat),double(gps_previous.lon),double(gps_previous.alt),double(gps_output.lat),double(gps_output.lon),double(gps_output.alt)) > 6.5){	
-	
-	usedPredictedValues = 3;
-	gps_output.lat = int(predictedLat);
-	gps_output.lon = int(predictedLon);
-	gps_output.alt = int(predictedAlt);
-	usedPredictedValues = 5;
-	gps_output.lat = int(hybridLat);
-	gps_output.lon = int(hybridLon);
-	gps_output.alt = int(hybridAlt);
-	
-	if(UseML == 4){
-	usedPredictedValues = 4;
-	gps_output.lat = int(calculatedLat);
-	gps_output.lon = int(calculatedLon);
-	gps_output.alt = int(calculatedAlt);
-	} else if(UseML == 5){
-    	//HybridNextPos();
-	gps_output.lat = int(hybridLat);
-	gps_output.lon = int(hybridLon);
-	gps_output.alt = int(hybridAlt);
-	}
-	}
 	
 
 					
