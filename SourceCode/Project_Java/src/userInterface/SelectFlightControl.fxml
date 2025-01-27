@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="700.0" minWidth="950.0" style="-fx-background-color: #dae9f4;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userInterface.SelectFlightControlController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutY="-7.0" minHeight="559.0" minWidth="850.0" prefHeight="559.0" prefWidth="850.0" spacing="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="64.0" minWidth="850.0" prefHeight="64.0" prefWidth="914.0" spacing="10.0">
+               <padding>
+                  <Insets left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <children>
+                  <Button fx:id="step1" mnemonicParsing="false" prefHeight="41.0" prefWidth="142.0" style="-fx-background-color: #274c5e;" text="Flight Controller" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                     </padding>
+                  </Button>
+                  <Polygon fill="#274c5e" points="28.399927139282227, -17.20004653930664, 2.799924373626709, -5.200034141540527, 2.7999770641326904, -31.600040435791016" stroke="BLACK" strokeType="INSIDE" />
+                  <Button fx:id="step2" mnemonicParsing="false" prefHeight="39.0" prefWidth="310.0" style="-fx-background-color: #77919d;" text="UAV Model &amp; Environment and Mission" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                     </padding>
+                  </Button>
+                  <Polygon fill="#274c5e" points="28.399927139282227, -17.20004653930664, 2.799924373626709, -5.200034141540527, 2.7999770641326904, -31.600040435791016" stroke="BLACK" strokeType="INSIDE" />
+                  <Button fx:id="step4" mnemonicParsing="false" prefHeight="39.0" prefWidth="143.0" style="-fx-background-color: #77919d;" text="Injection Process" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                     </padding>
+                  </Button>
+                  <Polygon fill="#274c5e" points="28.399927139282227, -17.20004653930664, 2.799924373626709, -5.200034141540527, 2.7999770641326904, -31.600040435791016" stroke="BLACK" strokeType="INSIDE" />
+                  <Button fx:id="step5" mnemonicParsing="false" prefHeight="39.0" prefWidth="176.0" style="-fx-background-color: #77919d;" text="Campaign Overview" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </HBox>
+            <Text fx:id="tlDescription" fill="#274c5e" strokeType="OUTSIDE" strokeWidth="0.0" text="Select the Flight  Controller Under Assessment">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="-30.0" top="80.0" />
+               </VBox.margin>
+            </Text>
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="100.0" minWidth="850.0" prefWidth="850.0" spacing="70.0">
+               <children>
+                  <ImageView fx:id="ivPX4" fitHeight="100.0" fitWidth="200.0" onMouseClicked="#onClickPX4" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/px4_AutoPilot.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="ivArduPilot" fitHeight="100.0" fitWidth="200.0" onMouseClicked="#onClickArduPilot" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/ardupilot_logo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="ivRotorS" fitHeight="100.0" fitWidth="200.0" onMouseClicked="#onClickRotorS" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/rotors_logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </HBox>
+            <Text fx:id="tlDescription1" fill="#274c5e" layoutX="140.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently the tool only supports PX4, but others will come soon" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="810.0" spacing="10.0">
+               <children>
+                  <Button fx:id="btnNext" disable="true" mnemonicParsing="false" onMouseClicked="#onClickBtnNext" onMouseEntered="#onMouseEnteredBtnNext" onMouseExited="#onMouseExitBtnNext" prefHeight="0.0" prefWidth="100.0" style="-fx-background-color: #274c5e;" text="Next" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                     </padding>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="-15.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </children>
+</AnchorPane>

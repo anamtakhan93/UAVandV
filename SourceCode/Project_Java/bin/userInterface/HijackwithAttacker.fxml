@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="324.0" prefWidth="540.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userInterface.HijackwithAttackerController">
+   <children>
+      <VBox alignment="CENTER" spacing="20.0" style="-fx-background-color: #77919d;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="#274c5e" strokeType="OUTSIDE" strokeWidth="0.0" text="Security Attack - Hijack with attacker’s specified position">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Text>
+            <HBox alignment="CENTER" prefHeight="327.0" prefWidth="540.0" spacing="2.0">
+               <children>
+                  <VBox prefHeight="162.0" prefWidth="162.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="64.0" prefWidth="179.0" />
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#274c5e" strokeType="OUTSIDE" strokeWidth="0.0" text="GPS Latitude">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#274c5e" strokeType="OUTSIDE" strokeWidth="0.0" text="GPS Longitude">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#274c5e" strokeType="OUTSIDE" strokeWidth="0.0" text="GPS Elevation/Altitude">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="162.0" prefWidth="148.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="64.0" prefWidth="179.0">
+                           <children>
+                              <Text fill="#274c5e" strokeType="OUTSIDE" strokeWidth="0.0" text="Fixed Value">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="tfLatitude" alignment="CENTER_RIGHT" maxWidth="-Infinity" prefHeight="25.0" prefWidth="90.0" text="-90" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="tfLongitude" alignment="CENTER_RIGHT" maxWidth="-Infinity" prefHeight="25.0" prefWidth="90.0" text="-180" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="tfAltitude" alignment="CENTER_RIGHT" maxWidth="-Infinity" prefHeight="25.0" prefWidth="90.0" text="0" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="41.0" prefWidth="540.0" spacing="10.0">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" spacing="2.0">
+                     <children>
+                        <Text fill="#274c5e" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Injection Window at (s):">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="-6.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fill="#274c5e" strokeType="OUTSIDE" strokeWidth="0.0" text="End Injection Window at (s):" wrappingWidth="191.44866919517517">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="4.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fill="#274c5e" strokeType="OUTSIDE" strokeWidth="0.0" text="End Injection Run at (s):">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="4.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="2.0">
+                     <children>
+                        <TextField fx:id="tfStartInjWindowTime" alignment="CENTER_RIGHT" text="0" />
+                        <TextField fx:id="tfEndInjWindowTime" alignment="CENTER_RIGHT" text="1" />
+                        <TextField fx:id="tfEndInjRunTime" alignment="CENTER_RIGHT" text="2" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="41.0" prefWidth="540.0" spacing="10.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="-12.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

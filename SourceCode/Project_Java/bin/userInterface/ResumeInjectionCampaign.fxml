@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="apResumeInjCampaign" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="700.0" minWidth="950.0" style="-fx-background-color: #dae9f4;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userInterface.ResumeInjectionCampaign">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="-14.0" minHeight="559.0" minWidth="850.0" prefHeight="700.0" prefWidth="950.0" spacing="30.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="-14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="64.0" minWidth="850.0" prefHeight="64.0" prefWidth="914.0" spacing="10.0">
+               <padding>
+                  <Insets left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="147.0" style="-fx-background-color: #77919d;" text="Flight Controller" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                     </padding>
+                  </Button>
+                  <Polygon fill="#274c5e" points="28.399927139282227, -17.20004653930664, 2.799924373626709, -5.200034141540527, 2.7999770641326904, -31.600040435791016" stroke="BLACK" strokeType="INSIDE" />
+                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="310.0" style="-fx-background-color: #77919d;" text="UAV Model &amp; Environment and Mission" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                     </padding>
+                  </Button>
+                  <Polygon fill="#274c5e" points="28.399927139282227, -17.20004653930664, 2.799924373626709, -5.200034141540527, 2.7999770641326904, -31.600040435791016" stroke="BLACK" strokeType="INSIDE" />
+                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="146.0" style="-fx-background-color: #77919d;" text="Injection Process" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                     </padding>
+                  </Button>
+                  <Polygon fill="#274c5e" points="28.399927139282227, -17.20004653930664, 2.799924373626709, -5.200034141540527, 2.7999770641326904, -31.600040435791016" stroke="BLACK" strokeType="INSIDE" />
+                  <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="176.0" style="-fx-background-color: #274c5e;" text="Campaign Overview" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </HBox>
+            <Text fill="#274c5e" strokeType="OUTSIDE" strokeWidth="0.0" text="Configure the Injection Campaign">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="-30.0" top="20.0" />
+               </VBox.margin>
+            </Text>
+            <VBox prefHeight="405.0" prefWidth="312.0" spacing="5.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="42.0" prefWidth="880.0" spacing="10.0">
+                     <children>
+                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                           <children>
+                              <Text fx:id="tlDescription121" fill="#274c5e" strokeType="OUTSIDE" strokeWidth="0.0" text="Campaign Name">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="tlDescription1211" fill="#274c5e" strokeType="OUTSIDE" strokeWidth="0.0" text="Responsable">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT" spacing="5.0">
+                           <children>
+                              <TextField fx:id="tfCampaingName" alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="213.0" />
+                              <TextField fx:id="tfResponsable" alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="213.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Text fill="#274c5e" strokeType="OUTSIDE" strokeWidth="0.0" text="Faults Resume">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <TextArea fx:id="taResume" editable="false" prefHeight="307.0" prefWidth="880.0" />
+               </children>
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+            </VBox>
+            <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="51.0" prefWidth="810.0" spacing="10.0">
+               <children>
+                  <Button fx:id="btnGenerateCampagin" disable="true" mnemonicParsing="false" onMouseClicked="#onClickGenerate" prefHeight="41.0" prefWidth="234.0" style="-fx-background-color: #274c5e;" text="Generate Campaign" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                     </padding>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </children>
+</AnchorPane>

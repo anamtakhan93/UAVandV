@@ -1,0 +1,8 @@
+DroneIP = 127.0.0.1:14540
+MissionPath = /home/bubbles/Missions/mission_127.0.0.1:14540.plan
+InjectionTimeStart = 25
+InjectionTimeEnd = 50
+FaultType = Security
+FaultTarget = GPS
+FaultSubType = RandomLongtitude
+Values = [10, 10, 10, 10, 10, 10]
