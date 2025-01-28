@@ -75,8 +75,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         <h2>Code Walkthrough</h2>
         <p>Provide an overview of the codebase, explaining the structure and key files. You may also want to describe important algorithms or data flows used in the implementation.</p>
 
-        <h2>Testing and Validation</h2>
-        <p>Explain how the system has been tested. Describe the testing framework, test cases, and the results obtained. You can also provide any benchmark or performance metrics here.</p>
+        <h2>Custom Fault</h2>
+        <p>The custom fault feature allows users to upload a Python script to simulate faults. When a custom fault is triggered, the output of the user-defined Python script replaces the original sensor values in the PX4. These modified values are seamlessly integrated into the system as inputs to the Extended Kalman Filter (EKF). This process ensures that the custom fault logic directly influences the UAV’s navigation and state estimation, allowing realistic simulation of the impact of the fault on system performance.</p>
+
+        <p>The Python script must follow a predefined interface depending on the targeted component, it must takes input as previous value and must output the value which needs to be the current value, more details on the format are available on the website.</p>
+            
+        <p>The custom fault feature offers significant advantages. It allows users to simulate novel and complex fault scenarios beyond predefined types, enabling more comprehensive testing. Researchers can explore combinations of faults, such as simultaneous GPS drift and IMU noise, to assess the robustness of the UAV in multi-fault scenarios. Furthermore, the ability to define context-aware fault logic provides a powerful tool to evaluate UAV behavior under diverse and realistic operational conditions, significantly improving the versatility of this framework.</p>
+          
+        <p>Due to potential security risks associated with the execution of Python scripts, such as malicious or unintentional actions, this custom fault system is restricted to local fault execution only. To ensure safe and seamless usage, a template for the Python file, specifying the required input and output parameters, is provided in the project's Git repository. This template helps users quickly implement their fault logic while adhering to the expected format. This feature is currently only implemented for GPS, but will soon be updated for IMU as well.</p>
 
         <h2>Future Enhancements</h2>
         <p>Discuss any technical challenges faced during the implementation and how they were overcome. This section can include debugging strategies, performance optimization, or unique solutions to specific problems encountered during development.</p>
