@@ -73,7 +73,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         </ul>
 
         <h2>Adding a new topic</h2>
-        <p>To add a new topic.</p>
+        <p>To add a new topic. To be written</p>
 
         <h2>Custom Fault</h2>
         <p>The custom fault feature allows users to upload a Python script to simulate faults. When a custom fault is triggered, the output of the user-defined Python script replaces the original sensor values in the PX4. These modified values are seamlessly integrated into the system as inputs to the Extended Kalman Filter (EKF). This process ensures that the custom fault logic directly influences the UAV’s navigation and state estimation, allowing realistic simulation of the impact of the fault on system performance.</p>
@@ -85,7 +85,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         <p>Due to potential security risks associated with the execution of Python scripts, such as malicious or unintentional actions, this custom fault system is restricted to local fault execution only. To ensure safe and seamless usage, a template for the Python file, specifying the required input and output parameters, is provided in the project's Git repository. This template helps users quickly implement their fault logic while adhering to the expected format. This feature is currently only implemented for GPS, but will soon be updated for IMU as well.</p>
 
         <h2>Future Enhancements</h2>
-        <p>Discuss any technical challenges faced during the implementation and how they were overcome. This section can include debugging strategies, performance optimization, or unique solutions to specific problems encountered during development.</p>
+        <p>The proposed toolkit offers significant potential for future enhancements and expansions. One of the primary goals is to extend its compatibility to support additional flight controllers such as ArduPilot and RotorS. By broadening the range of supported platforms, the toolkit can cater to a wider community of researchers and practitioners in the UAV domain, enhancing its usability and impact.</p>
+
+        <p>This toolkit also includes implementation capabilities for both location-based and combined location-time-based faults. Although these features have not been evaluated in any research, the toolkit supports them.</p>
+          
+        <p>In addition, while the present faults are embedded within the flight controller code, our future goal is to investigate and implement faults as external attacks that do not necessitate modifications to the flight controller's source code.</p>
+          
+        <p>Another key area of future work is conducting experiments with real drones. This involves deploying PX4 firmware augmented with fault injection capabilities directly to physical UAVs. Such real-world testing will provide deeper insight into the practical implications of the toolkit’s fault injection models and their effectiveness in uncovering vulnerabilities and improving the resilience of the system.</p>
 
         <h2>More about the tool</h2>
         <p>The papaer publised about this tool is avaialble here [link to be added after the paper is published], which contains all the architectural details the possibilities of V&V with this tool.</p>
